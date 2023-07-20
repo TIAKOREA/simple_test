@@ -525,7 +525,11 @@ p {
 <body bgcolor="white">
 	<article id="8f6cc7e7-f820-448a-a702-245ef4aec1d8" class="page sans">
 		<div class="page-body">
+			<!-- TITLE 영역 시작 -->
 			<h1 id="52042dc5-07d6-4c6e-8f6c-29d7ab4bdbe9" style="width:100%; font-size:5.5rem" >👋 Hi! </h1>
+			<!-- TITLE 영역 종료 -->
+			
+			<!-- 국기 영역 시작 -->
 			<div style="display:flex">
 				<a href="#" style="flex:1; margin: 5px;"><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="American" width="50" height="50" onclick="changeLanguage('english')"></a>
 				<a href="#" style="flex:1; margin: 5px;"><img src="https://flagicons.lipis.dev/flags/4x3/es.svg" alt="Spanish" width="50" height="50" onclick="changeLanguage('spanish')"></a>
@@ -535,17 +539,25 @@ p {
 				<a href="#" style="flex:1; margin: 5px;"><img src="https://flagicons.lipis.dev/flags/4x3/fr.svg" alt="France" width="50" height="50" onclick="changeLanguage('french')"></a>
 				<a href="#" style="flex:1; margin: 5px;"><img src="https://flagicons.lipis.dev/flags/4x3/de.svg" alt="German" width="50" height="50" onclick="changeLanguage('german')"></a>
 			</div>
+			<!-- 국기 영역 종료 -->
+
+			<!-- 내용 영역 (최초 보여지는 내용) 시작 -->
 			<figure style="white-space:pre-wrap;display:flex" id="925d9d7e-7937-4792-804c-3e3bfaf4f9b5">
 				<div style="width:100%; font-size:2.5rem" id="message"><p>The ranking system is terminated.<br><br> You need to log in in the new version to link scores and purchasing history. <br><br>In order to link scores and purchasing history, click on the shape of the upper left person in the new version.</p>
 				</div>
 			</figure>
+			<!-- 내용 영역 (최초 보여지는 내용 종료 -->
+
+			<!-- 버튼 영역 시작 -->
 			<figure id="eb3198f9-9e42-410a-91cd-d315fad2747e" class="image">
 				<a href="unity:open_url"><img style="width:50%" src="src/btn@3x.png"/></a>
 			</figure>
+			<!-- 버튼 영역 종료 -->
 		</div>
 </article>
-<script>
 
+<!-- 내용 영역 (국기 선택하면 보여지는 내용) 시작 -->
+<script>
   function changeLanguage(language) {
     const message = document.getElementById("message");
     if (language === "english") {
@@ -562,9 +574,11 @@ p {
       message.innerHTML = "<p>Le service de classement est résilié.<br><br>Vous devez vous connecter dans la nouvelle version pour lier les scores et l'historique des achats.<br><br>Afin de lier les scores et l'historique des achats, cliquez sur la forme de la personne supérieure gauche dans la nouvelle version.</p>"
     } else if (language === "german") {
       message.innerHTML = "<p>Der Ranking -Service wird gekündigt.<br><br>Sie müssen sich in der neuen Version anmelden, um die Bewertungen und den Kaufverlauf zu verknüpfen.<br><br>Klicken Sie auf die Form der oberen linken Person in der neuen Version, um Bewertungen und Kaufverlauf zu verknüpfen.</p>"
-    }
+    }	    
   }
   </script>
+<!-- 내용 영역 (국기 선택하면 보여지는 내용) 종료 -->
+	
 </body>
 </html>
 
